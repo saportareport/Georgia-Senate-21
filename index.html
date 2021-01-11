@@ -46,6 +46,7 @@ L.geoJson(districts, {
     style: myStyle,
     onEachFeature: function (feature, layer) {
         console.log(feature.properties)
+        if (feature.properties.web) {var web = '<a href="' + feature.properties.web + '" rel="noopener" target="_blank">Web</a><br>'} else {var web = ''}
         if (feature.properties.twitter) {var twitter = '<a href="' + feature.properties.twitter + '" rel="noopener" target="_blank">Twitter</a><br>'} else {var twitter = ''}
         if (feature.properties.fb) {var fb = '<a href="' + feature.properties.fb + '" rel="noopener" target="_blank">Facebook</a><br>'} else {var fb = ''}
         if (feature.properties.insta) {var insta = '<a href="' + feature.properties.insta + '" rel="noopener" target="_blank">Instagram</a>'} else {var insta = ''}
@@ -54,6 +55,7 @@ L.geoJson(districts, {
             '<br>Rep. ' + feature.properties.display_name + ' (' +
             feature.properties.party + ')<br>' +
             '<a href="' + feature.properties.official + '" rel="noopener" target="_blank">Official page and contact </a><br>' +
+            web +
             twitter + 
             fb + 
             insta
