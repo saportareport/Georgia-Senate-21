@@ -2,4 +2,4 @@
 Know your Georgia State Senate 2021 — district map and social directory
 Find your Georgia Senate district & legislator contact information
 
-This map is for a story at SaportaReport.com. More details to come. 
+For story at [SaportaReport.com](https://saportareport.com/meet-your-georgia-lawmakers-the-2021-session-is-about-to-start/columnists/maggie-lee/maggie/).
